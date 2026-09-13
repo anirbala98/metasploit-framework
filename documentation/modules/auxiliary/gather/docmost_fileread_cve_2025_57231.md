@@ -1,7 +1,7 @@
 ## Vulnerable Application
 
 Docmost from versions 0.2.1 until 0.21.0, fails to validate file paths sent to the publicly accessible /api/attachments/img/avatar endpoint.
-The leads to an arbitrary file read vulnerability allowing unauthenticated attackers to retrieve local sensitive files.
+This leads to an arbitrary file read vulnerability allowing unauthenticated attackers to retrieve local sensitive files.
 
 This module uses this vulnerability to retrieve the contents of arbitrary local files by performing directory traversal via avatar endpoint.
 
